@@ -1,0 +1,43 @@
+:root{
+    --main-color:#ec1c23;
+    --second-color:#08526d;
+    --main-transrtion:0.4s;
+}
+/* start navbar */
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl{
+    padding: 20px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    margin-left: 15px;
+    font-size: 20px;
+    color:var(--second-color);
+    transition:var(--main-transrtion) ;
+    -webkit-transition:var(--main-transrtion) ;
+    -moz-transition:var(--main-transrtion) ;
+    -ms-transition:var(--main-transrtion) ;
+    -o-transition:var(--main-transrtion) ;
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: var(--main-color);
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+    color: var(--main-color);
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+}
+.navbar-light .navbar-brand{
+    font-size: 25px;
+    font-weight: bold;
+    color:var(--second-color);
+}
+.navbar-light .navbar-brand span{
+    color: var(--main-color);
+    font-weight: normal;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover{
+    color:var(--second-color);
+}
+/* end navbar */
